@@ -1,0 +1,52 @@
+{
+  "name": "idiosyncratic/http-middlewarehandler",
+  "description": "Simple PSR-15 Middleware Handler",
+  "type": "library",
+  "license": "MIT",
+  "keywords": [
+    "psr-7",
+    "psr-15"
+  ],
+  "authors": [
+    {
+      "name": "Jason Silkey",
+      "email": "jason@jasonsilkey.com"
+    }
+  ],
+  "support": {
+    "source": "https://github.com/idiosyncratic/http-middlewarehandler",
+    "issues": "https://github.com/idiosyncratic/http-middlewarehandler/issues"
+  },
+  "require": {
+    "php": ">=7.3",
+    "psr/http-message": "^1.0",
+    "psr/http-server-handler": "^1.0",
+    "psr/http-server-middleware": "^1.0"
+  },
+  "require-dev": {
+    "doctrine/coding-standard": "^5.0",
+    "nyholm/psr7": "^1.1",
+    "phpstan/phpstan": "^0.11.2",
+    "phpstan/phpstan-phpunit": "^0.11.0",
+    "phpunit/phpunit": "^8.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Idiosyncratic\\Http\\Middleware\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Idiosyncratic\\Http\\Middleware\\": "tests"
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "config": {
+    "preferred-install": "dist",
+    "sort-packages": true,
+    "optimize-autoloader": true,
+    "discard-changes": true,
+    "bin-dir" : "bin"
+  }
+}
