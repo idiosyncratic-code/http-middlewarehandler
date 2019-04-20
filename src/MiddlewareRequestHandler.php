@@ -32,12 +32,12 @@ final class MiddlewareRequestHandler implements RequestHandlerInterface
      */
     public function handle(ServerRequestInterface $request) : ResponseInterface
     {
-        $runner = clone $this;
+        $handler = clone $this;
 
-        $handler = $runner->getNextHandler();
+        $nextHandler = $handler->getNextHandler();
 
-        return $handler instanceof MiddlewareInterface ?
-            $handler->process($request, $runner) :
+        return $nextHandler instanceof MiddlewareInterface ?
+            $nextHandler->process($request, $handler) :
             $this->defaultHandler->handle($request);
     }
 
