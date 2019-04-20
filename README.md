@@ -1,4 +1,4 @@
-# The Idiosyncratic HTTP Middlware Request Handler
+# The Idiosyncratic HTTP Middleware Request Handler
 
 Fast, simple queue based PSR-15 Middleware Handler.
 
