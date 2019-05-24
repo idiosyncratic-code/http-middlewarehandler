@@ -2,7 +2,7 @@
   "name": "idiosyncratic/http-middlewarehandler",
   "description": "Simple PSR-15 Middleware Handler",
   "type": "library",
-  "license": "MIT",
+  "license": "ISC",
   "keywords": [
     "psr-7",
     "psr-15"
